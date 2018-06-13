@@ -1,0 +1,54 @@
+CREATE TABLE IF NOT EXISTS `ims_account_webapp` (
+  `acid` int(11) NOT NULL,
+  `uniacid` int(11) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ALTER TABLE `ims_article_notice` ADD `group` varchar(255) NOT NULL;
+
+
+ALTER TABLE `ims_article_notice` ADD `welcome_support` int(2) NOT NULL;
+ALTER TABLE `ims_article_notice` ADD  `oauth_type` tinyint(1) NOT NULL DEFAULT '1';
+ ALTER TABLE `ims_article_notice` ADD `webapp_support` tinyint(1) NOT NULL;
+  ALTER TABLE `ims_users_founder_group` ADD `maxwebapp` int(10) NOT NULL;
+    ALTER TABLE `ims_users_group` ADD `maxwebapp` int(10) NOT NULL;
+    
+    
+    ALTER TABLE `ims_wxapp_versions` ADD   `type` int(2) NOT NULL;
+     ALTER TABLE `ims_wxapp_versions` ADD  `entry_id` int(11) NOT NULL;
+     ALTER TABLE `ims_wxapp_versions` ADD  `appjson` text NOT NULL;
+     ALTER TABLE `ims_wxapp_versions` ADD  `default_appjson` text NOT NULL;
+     ALTER TABLE `ims_wxapp_versions` ADD  `use_default` tinyint(1) NOT NULL;
+
+CREATE TABLE IF NOT EXISTS `ims_message_notice_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `message` varchar(255) NOT NULL,
+  `is_read` tinyint(3) NOT NULL,
+  `uid` int(11) NOT NULL,
+  `sign` varchar(22) NOT NULL,
+  `type` tinyint(3) NOT NULL,
+  `status` tinyint(3) DEFAULT NULL,
+  `create_time` int(11) NOT NULL,
+  `end_time` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `ims_modules_rank` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `module_name` varchar(100) NOT NULL,
+  `uid` int(10) NOT NULL,
+  `rank` int(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `module_name` (`module_name`),
+  KEY `uid` (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `ims_users_bind` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL,
+  `bind_sign` varchar(50) NOT NULL,
+  `third_type` tinyint(4) NOT NULL,
+  `third_nickname` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `uid` (`uid`),
+  KEY `bind_sign` (`bind_sign`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
