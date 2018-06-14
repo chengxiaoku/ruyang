@@ -13,6 +13,7 @@ $GLOBALS['frames'] = $this->getMainMenu();
             $data['total_num']=$_GPC['total_num'];
             $data['sj_max']=$_GPC['sj_max'];
             $data['zfwl_max']=$_GPC['zfwl_max'];
+            $data['video_type']=$_GPC['video_type'];
             $data['zfwl_open']=$_GPC['zfwl_open'];
             $data['tc_img']=$_GPC['tc_img'];
             $data['tc_gg']=$_GPC['tc_gg'];     

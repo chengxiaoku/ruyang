@@ -4794,21 +4794,115 @@ ORDER BY create_time desc)";
     function doPagegetmytyperenwu(){
         global $_W, $_GPC;
         $userid = $_GPC['userid'];
-        $mytype = $_GPC['mytype'];
+        $status = $_GPC['mytype'];  //任务的当前状态
         $sql = "SELECT
-	b.id as dongtaiid,c.name,b.details,b.user_tel,b.user_name,FROM_UNIXTIME(b.time,'%Y-%m-%d %H:%i') as createtime,b.address
+	b.id as dongtaiid,c.name,b.details,b.user_tel,b.user_name,FROM_UNIXTIME(b.time,'%Y-%m-%d %H:%i') as createtime,b.money_clf ,b.address
 FROM
 	".tablename('clf_renwu_order')." a
 LEFT JOIN ".tablename('zhtc_information')." b ON b.id = a.renwuid
 LEFT JOIN ".tablename('zhtc_user')." c ON c.id = b.user_id
 WHERE
-	a.userid1 = 2
-AND a.STATUS = 3
+	a.userid1 = :userid
+AND a.STATUS = :status
+AND b.mytype = 1
 ORDER BY
 	a.create_time DESC";
 
-        $data = pdo_fetchall($sql,array(':userid'=>$userid,':mytype' => $mytype));
+        $data = pdo_fetchall($sql,array(':userid'=>$userid,':status' => $status));
         $this->ajaxSuccess($data);
+    }
+
+    /**
+     * 上传视频
+     */
+    function doPageUploadVideo(){
+        //1.接收提交文件的用户
+        //$username=$_POST['username'];
+        //我们这里需要使用到 $_FILES
+        
+        $obj = $_FILES['upfile'];
+        //php中自身对上传的文件大小存在限制默认为2M
+        //获取文件的大小
+        $file_size= $obj['size'];
+        if($file_size>2*1024*1024) {
+            $this->ajaxError("视频过大，不能上传大于2M的文件");   //通过配置进行修改
+        }
+
+        $file_type=$obj['type'];
+        //判断是否满足格式要求
+        $this->video_type($file_type);
+
+        //判断是否上传成功（是否使用post方式上传）
+        if(is_uploaded_file($obj['tmp_name'])) {
+            //把文件转存到你希望的目录（不要使用copy函数）
+            $uploaded_file=$obj['tmp_name'];
+
+            //创建一个文件夹
+            $path = dirname(__DIR__).'/video/';
+            //判断该用户文件夹是否已经有这个文件夹
+            if(!file_exists($path)) {
+                $this->createDir($path);
+            }
+
+            $time = time().mt_rand(100,999);
+            $filename = $obj['name'];
+
+            $new_filename = $time.$filename;
+            $move_to_file=$path.$new_filename;  //组成文件路径
+                                                                    //一些配置  需要写在后台   比如文件大小 格式
+            if(move_uploaded_file($uploaded_file,iconv("utf-8","gb2312",$move_to_file))) {
+                $this->ajaxSuccess($new_filename,'上传成功');
+            } else {
+               $this->ajaxError('上传失败，错误代码1001');
+            }
+        } else {
+            $this->ajaxError('上传失败，错误代码1002');
+        }
+
+    }
+
+    /**
+     * 判断上传的视频是否满足 后台设置的格式要求
+     */
+    private function video_type($file_type){
+        global $_GPC, $_W;
+        $item=pdo_get('zhtc_system',array('uniacid'=>$_W['uniacid']));
+        $type = $item['video'];
+        if(empty($type)){
+            $this->ajaxError('上传失败，错误代码1003');
+        }else{
+            $flag = false;
+            $arr = explode(',', $type);
+            foreach ($arr as $key => $val){
+                if(trim($val) == $file_type){
+                    $flag = true;
+                    break;
+                }
+            }
+            if(!$flag){
+                $this->ajaxError('上传的视频格式不正确');
+            }
+        }
+    }
+
+    /**
+     * 建立文件夹
+     *
+     * @param string $aimUrl
+     * @return viod
+     */
+    function createDir($aimUrl) {
+        $aimUrl = str_replace('', '/', $aimUrl);
+        $aimDir = '';
+        $arr = explode('/', $aimUrl);
+        $result = true;
+        foreach ($arr as $str) {
+            $aimDir .= $str . '/';
+            if (!file_exists($aimDir)) {
+                $result = mkdir($aimDir);
+            }
+        }
+        return $result;
     }
 
 }/////////////////////////////////////////////
