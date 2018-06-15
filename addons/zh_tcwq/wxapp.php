@@ -412,6 +412,8 @@ public function doPagePostList(){
 
       echo json_encode($data2);
     }
+//* 任务列表传参数type = 1
+//* 帖子列表传参数 type = 2 （默认）
 //所有帖子列表
 public function doPageList2(){
 global $_GPC, $_W;
@@ -428,6 +430,18 @@ if($_GPC['type_id']){
 $where.=" and  a.type_id=:type_id ";  
  $data[':type_id']=$_GPC['type_id'];
 }
+    //区分是任务  还是分类信息
+    if($_GPC['mytype']){
+            $where .= "and a.mytype =:mytype";
+        $data[':mytype']=$_GPC['mytype'];
+        if($_GPC['mytype'] == 1){
+            $join = 'LEFT JOIN '.tablename("clf_renwu_order").' w ON w.renwuid = a.id ';
+            $filed = ',w.status as order_status';
+        }else{
+            $join = '';
+            $filed = '';
+        }
+    }
 if($_GPC['cityname']){
 $where.=" and a.cityname LIKE  concat('%', :name,'%') ";  
 $data[':name']=$_GPC['cityname'];
@@ -435,7 +449,7 @@ $data[':name']=$_GPC['cityname'];
 
 $pageindex = max(1, intval($_GPC['page']));
 $pagesize=10;
-$sql="select a.*,b.img as user_img,c.type_name,d.name as type2_name  from" . tablename("zhtc_information") . " a"  . " left join " . tablename("zhtc_user") . " b on b.id=a.user_id " . " left join " . tablename("zhtc_type") . " c on a.type_id=c.id " . " left join " . tablename("zhtc_type2") . " d on a.type2_id=d.id ".$where." ORDER BY a.top asc,a.sh_time DESC";
+$sql="select a.*,b.img as user_img,c.type_name,d.name as type2_name {$filed}  from" . tablename("zhtc_information") . " a"  . " left join " . tablename("zhtc_user") . " b on b.id=a.user_id " . " left join " . tablename("zhtc_type") . " c on a.type_id=c.id " . " left join " . tablename("zhtc_type2") . " d on a.type2_id=d.id ".$join.$where." ORDER BY a.top asc,a.sh_time DESC";
 $select_sql =$sql." LIMIT " .($pageindex - 1) * $pagesize.",".$pagesize;
 $res = pdo_fetchall($select_sql,$data);
 $sql2="select a.*,b.label_name from " . tablename("zhtc_mylabel") . " a"  . " left join " . tablename("zhtc_label") . " b on b.id=a.label_id";
@@ -4867,7 +4881,7 @@ ORDER BY
     private function video_type($file_type){
         global $_GPC, $_W;
         $item=pdo_get('zhtc_system',array('uniacid'=>$_W['uniacid']));
-        $type = $item['video'];
+        $type = $item['video_type'];
         if(empty($type)){
             $this->ajaxError('上传失败，错误代码1003');
         }else{
