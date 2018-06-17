@@ -2,7 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/addons/zh_tcwq/icon-custom.jpg" />
-    <bookmark url="file://$PROJECT_DIR$/addons/zh_tcwq/wxapp.php" line="3927" />
+    <bookmark url="file://$PROJECT_DIR$/addons/zh_tcwq/wxapp.php" line="3938" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="752520d7-aeec-4330-9c4c-bfa0b9df8301" name="默认的" comment="" />
@@ -26,148 +26,122 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="wxapp.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxapp.php">
+      <file leaf-file-name="core.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/func/core.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7868">
-              <caret line="441" column="24" selection-start-line="441" selection-start-column="24" selection-end-line="441" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="233" column="31" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
               <folding>
-                <marker date="1529049738439" expanded="true" signature="2298:2364" placeholder="select * fro... ${tablename('zhtc_ad')}" />
-                <marker date="1529049738439" expanded="true" signature="8275:8471" placeholder="select a.*,b... ${tablename(&quot;zhtc_like&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="8716:8999" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="9463:9675" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="10028:10462" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="10574:10755" placeholder="select a.*,b... ${tablename(&quot;zhtc_like&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="10822:11014" placeholder="select a.*,b... ${tablename(&quot;zhtc_comments&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="11081:11262" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="12039:12292" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="12423:12556" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="13689:13947" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="14178:14311" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="16527:16660" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="28345:28626" placeholder="select a.*,b... ${tablename(&quot;zhtc_store&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="28850:29158" placeholder="select a.*,b... ${tablename(&quot;zhtc_store&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="29563:29749" placeholder="select a.*,b... ${tablename(&quot;zhtc_comments&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="32046:32110" placeholder="select * fro... ${tablename('zhtc_news')}" />
-                <marker date="1529049738439" expanded="true" signature="48681:48868" placeholder="select a.*,b... ${tablename(&quot;zhtc_zx_assess&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="49705:50085" placeholder="select a.*,b... ${tablename(&quot;zhtc_zx_zj&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="55044:55107" placeholder="select * fro... ${tablename('zhtc_car')}" />
-                <marker date="1529049738439" expanded="true" signature="55360:55493" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="56314:56447" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="57124:57292" placeholder="select a.*,b... ${tablename(&quot;zhtc_car&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="57362:57525" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="63200:63367" placeholder="select a.*,b... ${tablename(&quot;zhtc_spec_value&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="69120:69306" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="69663:69810" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="72655:72825" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="73010:73174" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="76209:76361" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="76542:76718" placeholder="select a.* ,... ${tablename(&quot;zhtc_earnings&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="79838:80013" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="80135:80310" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="80944:81041" placeholder="select sum(t... ${tablename(&quot;zhtc_commission_withdrawal&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="81124:81233" placeholder="select sum(t... ${tablename(&quot;zhtc_commission_withdrawal&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="81319:81401" placeholder="select sum(m... ${tablename(&quot;zhtc_earnings&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="85459:85736" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="86806:87066" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="87458:87706" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="95833:96015" placeholder="select a.sto... ${tablename(&quot;zhtc_store&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="102425:102727" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="104660:104845" placeholder="select a.det... ${tablename(&quot;zhtc_comments&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="106778:106957" placeholder="select a.det... ${tablename(&quot;zhtc_comments&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="108211:108498" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="111396:111601" placeholder="select a.*,b... ${tablename(&quot;zhtc_videodz&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="111683:111888" placeholder="select a.*,b... ${tablename(&quot;zhtc_videopl&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="123756:123886" placeholder="select * fro... ${tablename(&quot;zhtc_integral&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="124829:125023" placeholder="select a.*,b... ${tablename(&quot;zhtc_signlist&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="125312:125506" placeholder="select a.*,b... ${tablename(&quot;zhtc_signlist&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="126143:126332" placeholder="select sum(s... ${tablename(&quot;zhtc_integral&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="129060:129126" placeholder="select * fro... ${tablename('zhtc_ad')}" />
-                <marker date="1529049738439" expanded="true" signature="134048:134366" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="134131:134198" placeholder="select count... ims_clf_dongtai_dianzan" />
-                <marker date="1529049738439" expanded="true" signature="134935:135217" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="134935:135341" placeholder="select a.*,b... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="135018:135085" placeholder="select count... ims_clf_dongtai_dianzan" />
-                <marker date="1529049738439" expanded="true" signature="135229:135283" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="135229:135284" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="136794:137133" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="136877:136944" placeholder="select count... ims_clf_dongtai_dianzan" />
-                <marker date="1529049738439" expanded="true" signature="137893:138198" placeholder="SELECT a.con... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="139546:139732" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="139546:139739" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140730" placeholder="select * fro... " />
-                <marker date="1529049738439" expanded="true" signature="140661:140778" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140779" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140780" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140782" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140784" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140786" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="140661:140787" placeholder="select * fro... " />
-                <marker date="1529049738439" expanded="true" signature="144516:144702" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="144516:144708" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="144516:144709" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="145806:145957" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="146413:146652" placeholder="SELECT a.con... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="148554:148573" placeholder="select user_... " />
-                <marker date="1529049738439" expanded="true" signature="148554:148574" placeholder="select user_... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="148554:148598" placeholder="select user_... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="148554:148604" placeholder="select user_... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="148554:148613" placeholder="select user_... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="148554:148614" placeholder="select user_... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="150452:150499" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
-                <marker date="1529049738439" expanded="true" signature="150452:150508" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
-                <marker date="1529049738439" expanded="true" signature="150452:150514" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
-                <marker date="1529049738439" expanded="true" signature="150452:150515" placeholder="SELECT renwu... ${tablename('')}" />
-                <marker date="1529049738439" expanded="true" signature="152694:152713" placeholder="select useri... " />
-                <marker date="1529049738439" expanded="true" signature="152694:152752" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-                <marker date="1529049738439" expanded="true" signature="152694:152764" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-                <marker date="1529049738439" expanded="true" signature="152694:152771" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-                <marker date="1529049738439" expanded="true" signature="152694:152772" placeholder="select useri... ${tablename('')}" />
-                <marker date="1529049738439" expanded="true" signature="152808:152883" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-                <marker date="1529049738439" expanded="true" signature="153536:153556" placeholder="SELECT money... " />
-                <marker date="1529049738439" expanded="true" signature="153536:153557" placeholder="SELECT money... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="153536:153588" placeholder="SELECT money... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="153536:153597" placeholder="SELECT money... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="153536:153599" placeholder="SELECT money... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="153796:153861" placeholder="SELECT money... ${tablename($tablename)}" />
-                <marker date="1529049738439" expanded="true" signature="157246:157271" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="157246:157296" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="157246:157309" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="157246:157317" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="157599:157678" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="158159:158238" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="161680:161778" placeholder="select * fro... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="162386:162406" placeholder="SELECT * FRO... " />
-                <marker date="1529049738439" expanded="true" signature="162386:162407" placeholder="SELECT * FRO... ${tablename('')}" />
-                <marker date="1529049738439" expanded="true" signature="162386:162549" placeholder="SELECT * FRO... select" />
-                <marker date="1529049738439" expanded="true" signature="162386:162550" placeholder="SELECT * FRO... ${tablename('zhtc_user')}" />
-                <marker date="1529049738439" expanded="true" signature="162449:162549" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
-                <marker date="1529049738439" expanded="true" signature="163230:163411" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
-                <marker date="1529049738439" expanded="true" signature="163466:163594" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
-                <marker date="1529049738439" expanded="true" signature="163466:163641" placeholder="SELECT a.rev... ${tablename('clf_renwu_order')}" />
-                <marker date="1529049738439" expanded="true" signature="163466:163755" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
-                <marker date="1529049738439" expanded="true" signature="164092:164134" placeholder="select ruyan... " />
-                <marker date="1529049738439" expanded="true" signature="164092:164135" placeholder="select ruyan... ${tablename('')}" />
-                <marker date="1529049738439" expanded="true" signature="164092:164167" placeholder="select ruyan... ${tablename('zhtc_user')}" />
-                <marker date="1529049738439" expanded="true" signature="164092:164180" placeholder="select ruyan... ${tablename('zhtc_user')}" />
-                <marker date="1529049738439" expanded="true" signature="165530:165599" placeholder="SELECT * FRO... " />
-                <marker date="1529049738439" expanded="true" signature="165530:165627" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165530:165632" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165530:165633" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165530:165640" placeholder="SELECT * FRO... ${tablename('')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166010" placeholder="SELECT * fro... " />
-                <marker date="1529049738439" expanded="true" signature="165921:166011" placeholder="SELECT * fro... ${tablename('')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166043" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166051" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166062" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166076" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166084" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="165921:166103" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-                <marker date="1529049738439" expanded="true" signature="166506:166625" placeholder="select *,FRO... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="166506:166634" placeholder="select *,FRO... ${tablename('clf_dongtai_pinglun')}" />
-                <marker date="1529049738439" expanded="true" signature="167542:167800" placeholder="SELECT b.id ${tablename('clf_renwu_order')}" />
-                <marker date="1529049738439" expanded="true" signature="167542:167945" placeholder="SELECT b.id a" />
+                <marker date="1529219217638" expanded="true" signature="523:537" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="997:1011" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="2036:2050" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="2627:2641" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="3268:3282" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="4074:4088" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="5084:5098" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="5613:5627" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="6943:6957" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="8101:8115" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="9203:9217" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="10224:10238" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="11489:11503" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="11902:11916" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="12562:12576" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="13239:13253" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="14628:14642" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="15021:15035" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="15600:15614" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="16197:16211" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="16611:16625" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="17231:17245" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="17715:17729" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="18122:18136" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="18587:18601" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="19090:19104" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="19866:19880" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="20360:20374" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="21014:21039" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="21762:21787" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="22225:22250" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="22964:22989" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="23532:23557" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="23964:23989" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="24523:24548" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="24980:25005" placeholder="..." />
+                <marker date="1529219217638" expanded="true" signature="28404:28470" placeholder="SELECT * FRO... ${tablename('wpdc_store')}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copyright.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/copyright.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign_grade.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/sign_grade.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdo.func.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign_grade.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/sign_grade.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="help.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/help.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="45" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="help.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/help.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/settings.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,16 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/index.html" />
-        <option value="$PROJECT_DIR$/web/source/system/menu.ctrl.php" />
-        <option value="$PROJECT_DIR$/web/themes/default/system/menu.html" />
-        <option value="$PROJECT_DIR$/web/common/frames.inc.php" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/dlinstoreinfo.html" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/storeinfo2.html" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/storeinfo2.inc.php" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/storeinfo.html" />
-        <option value="$PROJECT_DIR$/web/source/user/login.ctrl.php" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/admin/source/site/entry.ctrl.php" />
         <option value="$PROJECT_DIR$/app/source/entry/wxapp.ctrl.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/site.php" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -212,24 +176,20 @@
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/fenlei.html" />
         <option value="$PROJECT_DIR$/../index.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/dlininformation.html" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/user2.html" />
         <option value="$USER_HOME$/Desktop/index1.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/renwu.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/information.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/maddtype.inc.php" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/information.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/renwufenlei.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/maddtype.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/maddtype2.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/maddtype2.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/renwulist.inc.php" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/func/core.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/tzcheck.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/tzcheck.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/setrenwu.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/setrenwu.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/renwufenlei.html" />
-        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/renwulist.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/store.html" />
         <option value="$PROJECT_DIR$/framework/function/global.func.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/dashang.inc.php" />
@@ -237,7 +197,21 @@
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/dongtai.html" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/settings.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/settings.html" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/renwulist.html" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/information.html" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/index.html" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/user2.inc.php" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/user2.html" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/user2_funds.inc.php" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/user2_funds.html" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/xitong.inc.php" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/xitong.html" />
+        <option value="$PROJECT_DIR$/web/themes/default/platform/menu.html" />
+        <option value="$PROJECT_DIR$/web/common/frames.inc.php" />
         <option value="$PROJECT_DIR$/addons/zh_tcwq/wxapp.php" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/func/core.php" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/inc/web/sign_grade.inc.php" />
+        <option value="$PROJECT_DIR$/addons/zh_tcwq/template/web/sign_grade.html" />
       </list>
     </option>
   </component>
@@ -282,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,6 +271,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruyang" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,12 +445,13 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../td" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WWW-bak/biezhuangle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -504,38 +532,46 @@
       <workItem from="1528874730473" duration="44000" />
       <workItem from="1528979331814" duration="3854000" />
       <workItem from="1529048315929" duration="2018000" />
-      <workItem from="1529057026505" duration="43000" />
+      <workItem from="1529057026505" duration="1228000" />
+      <workItem from="1529111925818" duration="24124000" />
+      <workItem from="1529151813376" duration="3429000" />
+      <workItem from="1529156307858" duration="1349000" />
+      <workItem from="1529163113280" duration="2761000" />
+      <workItem from="1529166567997" duration="597000" />
+      <workItem from="1529198473270" duration="4305000" />
+      <workItem from="1529214331183" duration="5479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179020000" />
+    <option name="totallyTimeSpent" value="222249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1056" extended-state="1" />
+    <frame x="-11" y="-11" width="1942" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20226537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2524272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108013935" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39140534" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13356562" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.583043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -554,262 +590,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/addons/zh_tcwq/wxapp.php</url>
-          <line>3896</line>
+          <line>3907</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/user2.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxpay2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5124">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxpay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4428">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/yj.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxBizDataCrypt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/pkcs7Encoder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1479">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/builtin/recharge/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/function/logging.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="39" column="61" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/dlininformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="106" column="65" selection-start-line="106" selection-start-column="65" selection-end-line="106" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/jq最后一道大题.html" />
-    <entry file="file://$USER_HOME$/Desktop/index1.html" />
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/receivelist.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/fenlei.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/fenlei.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="172" column="122" selection-start-line="172" selection-start-column="116" selection-end-line="172" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/maddtype.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/renwufenlei.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/maddtype2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/renwulist.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/maddtype2.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resource/components/ueditor/lang/zh-cn/zh-cn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3567">
-          <caret line="346" column="32" selection-start-line="346" selection-start-column="32" selection-end-line="346" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/source/system/attachment.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5713">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/func/core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/storecheck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3567">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/maddtype.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="107" column="6" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/renwufenlei.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/tpl/web/default/system/site.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/addinformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/renwulist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="187" column="57" selection-start-line="187" selection-start-column="57" selection-end-line="187" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/dashang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1182">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/tzcheck.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/tzcheck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="80" column="32" selection-start-line="79" selection-start-column="16" selection-end-line="85" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/setrenwu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/tpl/web/default/store/common/2_header-base.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/ininformation.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="798" column="9" selection-start-line="798" selection-start-column="9" selection-end-line="798" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/information.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -817,24 +606,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/function/global.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/pinglun.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="253" column="29" selection-start-line="253" selection-start-column="29" selection-end-line="253" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -859,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -887,161 +655,491 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/settings.html">
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/ininformation.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="249">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/settings.inc.php">
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/renwulist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="205">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="243" column="21" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/user2_funds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="91" column="84" selection-start-line="91" selection-start-column="84" selection-end-line="91" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/user2_funds.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/user2.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/xsdata.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1319">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/user2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="60" column="29" selection-start-line="55" selection-start-column="19" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/default/system/systeminfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="214" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/xitong.html" />
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/xitong.inc.php" />
+    <entry file="file://$PROJECT_DIR$/data/tpl/web/default/system/menu.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="107" selection-start-line="8" selection-start-column="107" selection-end-line="8" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/default/platform/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="467" column="25" selection-start-line="467" selection-start-column="25" selection-end-line="467" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/common/frames.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="594" column="18" selection-start-line="594" selection-start-column="18" selection-end-line="594" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="998" column="16" selection-start-line="998" selection-start-column="9" selection-end-line="998" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="848" column="9" selection-start-line="848" selection-start-column="9" selection-end-line="848" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/ad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3132">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/class/weixin.pay.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="428" column="77" selection-start-line="428" selection-start-column="74" selection-end-line="428" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxpay2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxpay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4459">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="372" column="20" selection-start-line="372" selection-start-column="9" selection-end-line="372" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tpl/web/default/system/systeminfo.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="47" column="55" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="1242" column="45" selection-start-line="1242" selection-start-column="45" selection-end-line="1242" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="400" column="16" selection-start-line="400" selection-start-column="9" selection-end-line="400" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/hash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/const.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/model/attachment.mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/admin/common/attachurl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3248">
+          <caret line="118" column="27" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/bootstrap.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1527501868264" expanded="true" signature="1010:1024" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/wxapp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7868">
-          <caret line="441" column="24" selection-start-line="441" selection-start-column="24" selection-end-line="441" selection-end-column="24" />
+        <state relative-caret-position="263">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <marker date="1529049738439" expanded="true" signature="2298:2364" placeholder="select * fro... ${tablename('zhtc_ad')}" />
-            <marker date="1529049738439" expanded="true" signature="8275:8471" placeholder="select a.*,b... ${tablename(&quot;zhtc_like&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="8716:8999" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="9463:9675" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="10028:10462" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="10574:10755" placeholder="select a.*,b... ${tablename(&quot;zhtc_like&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="10822:11014" placeholder="select a.*,b... ${tablename(&quot;zhtc_comments&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="11081:11262" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="12039:12292" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="12423:12556" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="13689:13947" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="14178:14311" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="16527:16660" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="28345:28626" placeholder="select a.*,b... ${tablename(&quot;zhtc_store&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="28850:29158" placeholder="select a.*,b... ${tablename(&quot;zhtc_store&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="29563:29749" placeholder="select a.*,b... ${tablename(&quot;zhtc_comments&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="32046:32110" placeholder="select * fro... ${tablename('zhtc_news')}" />
-            <marker date="1529049738439" expanded="true" signature="48681:48868" placeholder="select a.*,b... ${tablename(&quot;zhtc_zx_assess&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="49705:50085" placeholder="select a.*,b... ${tablename(&quot;zhtc_zx_zj&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="55044:55107" placeholder="select * fro... ${tablename('zhtc_car')}" />
-            <marker date="1529049738439" expanded="true" signature="55360:55493" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="56314:56447" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="57124:57292" placeholder="select a.*,b... ${tablename(&quot;zhtc_car&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="57362:57525" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="63200:63367" placeholder="select a.*,b... ${tablename(&quot;zhtc_spec_value&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="69120:69306" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="69663:69810" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="72655:72825" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="73010:73174" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="76209:76361" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="76542:76718" placeholder="select a.* ,... ${tablename(&quot;zhtc_earnings&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="79838:80013" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="80135:80310" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="80944:81041" placeholder="select sum(t... ${tablename(&quot;zhtc_commission_withdrawal&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="81124:81233" placeholder="select sum(t... ${tablename(&quot;zhtc_commission_withdrawal&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="81319:81401" placeholder="select sum(m... ${tablename(&quot;zhtc_earnings&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="85459:85736" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="86806:87066" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="87458:87706" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="95833:96015" placeholder="select a.sto... ${tablename(&quot;zhtc_store&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="102425:102727" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="104660:104845" placeholder="select a.det... ${tablename(&quot;zhtc_comments&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="106778:106957" placeholder="select a.det... ${tablename(&quot;zhtc_comments&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="108211:108498" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="111396:111601" placeholder="select a.*,b... ${tablename(&quot;zhtc_videodz&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="111683:111888" placeholder="select a.*,b... ${tablename(&quot;zhtc_videopl&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="123756:123886" placeholder="select * fro... ${tablename(&quot;zhtc_integral&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="124829:125023" placeholder="select a.*,b... ${tablename(&quot;zhtc_signlist&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="125312:125506" placeholder="select a.*,b... ${tablename(&quot;zhtc_signlist&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="126143:126332" placeholder="select sum(s... ${tablename(&quot;zhtc_integral&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="129060:129126" placeholder="select * fro... ${tablename('zhtc_ad')}" />
-            <marker date="1529049738439" expanded="true" signature="134048:134366" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="134131:134198" placeholder="select count... ims_clf_dongtai_dianzan" />
-            <marker date="1529049738439" expanded="true" signature="134935:135217" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="134935:135341" placeholder="select a.*,b... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="135018:135085" placeholder="select count... ims_clf_dongtai_dianzan" />
-            <marker date="1529049738439" expanded="true" signature="135229:135283" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="135229:135284" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="136794:137133" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="136877:136944" placeholder="select count... ims_clf_dongtai_dianzan" />
-            <marker date="1529049738439" expanded="true" signature="137893:138198" placeholder="SELECT a.con... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="139546:139732" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="139546:139739" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140730" placeholder="select * fro... " />
-            <marker date="1529049738439" expanded="true" signature="140661:140778" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140779" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140780" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140782" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140784" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140786" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="140661:140787" placeholder="select * fro... " />
-            <marker date="1529049738439" expanded="true" signature="144516:144702" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="144516:144708" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="144516:144709" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="145806:145957" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="146413:146652" placeholder="SELECT a.con... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="148554:148573" placeholder="select user_... " />
-            <marker date="1529049738439" expanded="true" signature="148554:148574" placeholder="select user_... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="148554:148598" placeholder="select user_... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="148554:148604" placeholder="select user_... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="148554:148613" placeholder="select user_... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="148554:148614" placeholder="select user_... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="150452:150499" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
-            <marker date="1529049738439" expanded="true" signature="150452:150508" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
-            <marker date="1529049738439" expanded="true" signature="150452:150514" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
-            <marker date="1529049738439" expanded="true" signature="150452:150515" placeholder="SELECT renwu... ${tablename('')}" />
-            <marker date="1529049738439" expanded="true" signature="152694:152713" placeholder="select useri... " />
-            <marker date="1529049738439" expanded="true" signature="152694:152752" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-            <marker date="1529049738439" expanded="true" signature="152694:152764" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-            <marker date="1529049738439" expanded="true" signature="152694:152771" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-            <marker date="1529049738439" expanded="true" signature="152694:152772" placeholder="select useri... ${tablename('')}" />
-            <marker date="1529049738439" expanded="true" signature="152808:152883" placeholder="select useri... ${tablename('clf_renwu_order')}" />
-            <marker date="1529049738439" expanded="true" signature="153536:153556" placeholder="SELECT money... " />
-            <marker date="1529049738439" expanded="true" signature="153536:153557" placeholder="SELECT money... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="153536:153588" placeholder="SELECT money... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="153536:153597" placeholder="SELECT money... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="153536:153599" placeholder="SELECT money... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="153796:153861" placeholder="SELECT money... ${tablename($tablename)}" />
-            <marker date="1529049738439" expanded="true" signature="157246:157271" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="157246:157296" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="157246:157309" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="157246:157317" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="157599:157678" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="158159:158238" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="161680:161778" placeholder="select * fro... ${tablename(&quot;clf_dongtai_list&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="162386:162406" placeholder="SELECT * FRO... " />
-            <marker date="1529049738439" expanded="true" signature="162386:162407" placeholder="SELECT * FRO... ${tablename('')}" />
-            <marker date="1529049738439" expanded="true" signature="162386:162549" placeholder="SELECT * FRO... select" />
-            <marker date="1529049738439" expanded="true" signature="162386:162550" placeholder="SELECT * FRO... ${tablename('zhtc_user')}" />
-            <marker date="1529049738439" expanded="true" signature="162449:162549" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
-            <marker date="1529049738439" expanded="true" signature="163230:163411" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
-            <marker date="1529049738439" expanded="true" signature="163466:163594" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
-            <marker date="1529049738439" expanded="true" signature="163466:163641" placeholder="SELECT a.rev... ${tablename('clf_renwu_order')}" />
-            <marker date="1529049738439" expanded="true" signature="163466:163755" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
-            <marker date="1529049738439" expanded="true" signature="164092:164134" placeholder="select ruyan... " />
-            <marker date="1529049738439" expanded="true" signature="164092:164135" placeholder="select ruyan... ${tablename('')}" />
-            <marker date="1529049738439" expanded="true" signature="164092:164167" placeholder="select ruyan... ${tablename('zhtc_user')}" />
-            <marker date="1529049738439" expanded="true" signature="164092:164180" placeholder="select ruyan... ${tablename('zhtc_user')}" />
-            <marker date="1529049738439" expanded="true" signature="165530:165599" placeholder="SELECT * FRO... " />
-            <marker date="1529049738439" expanded="true" signature="165530:165627" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165530:165632" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165530:165633" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165530:165640" placeholder="SELECT * FRO... ${tablename('')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166010" placeholder="SELECT * fro... " />
-            <marker date="1529049738439" expanded="true" signature="165921:166011" placeholder="SELECT * fro... ${tablename('')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166043" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166051" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166062" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166076" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166084" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="165921:166103" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
-            <marker date="1529049738439" expanded="true" signature="166506:166625" placeholder="select *,FRO... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="166506:166634" placeholder="select *,FRO... ${tablename('clf_dongtai_pinglun')}" />
-            <marker date="1529049738439" expanded="true" signature="167542:167800" placeholder="SELECT b.id ${tablename('clf_renwu_order')}" />
-            <marker date="1529049738439" expanded="true" signature="167542:167945" placeholder="SELECT b.id a" />
+            <marker date="1529203370896" expanded="true" signature="2298:2364" placeholder="select * fro... ${tablename('zhtc_ad')}" />
+            <marker date="1529203370896" expanded="true" signature="8370:8566" placeholder="select a.*,b... ${tablename(&quot;zhtc_like&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="8811:9094" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="9558:9770" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="10123:10557" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="10669:10850" placeholder="select a.*,b... ${tablename(&quot;zhtc_like&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="10917:11109" placeholder="select a.*,b... ${tablename(&quot;zhtc_comments&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="11176:11357" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="12134:12387" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="12518:12651" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="13784:14042" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="14273:14406" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="16799:16932" placeholder="select a.*,b... ${tablename(&quot;zhtc_mylabel&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="28624:28905" placeholder="select a.*,b... ${tablename(&quot;zhtc_store&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="29129:29437" placeholder="select a.*,b... ${tablename(&quot;zhtc_store&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="29842:30028" placeholder="select a.*,b... ${tablename(&quot;zhtc_comments&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="32325:32389" placeholder="select * fro... ${tablename('zhtc_news')}" />
+            <marker date="1529203370896" expanded="true" signature="48960:49147" placeholder="select a.*,b... ${tablename(&quot;zhtc_zx_assess&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="49984:50364" placeholder="select a.*,b... ${tablename(&quot;zhtc_zx_zj&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="55323:55386" placeholder="select * fro... ${tablename('zhtc_car')}" />
+            <marker date="1529203370896" expanded="true" signature="55639:55772" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="56593:56726" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="57403:57571" placeholder="select a.*,b... ${tablename(&quot;zhtc_car&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="57641:57804" placeholder="select a.*,b... ${tablename(&quot;zhtc_car_my_tag&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="63479:63646" placeholder="select a.*,b... ${tablename(&quot;zhtc_spec_value&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="69399:69585" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="69942:70089" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="72934:73104" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="73289:73453" placeholder="select a.*,b... ${tablename(&quot;zhtc_order&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="76488:76640" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="76821:76997" placeholder="select a.* ,... ${tablename(&quot;zhtc_earnings&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="80117:80292" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="80414:80589" placeholder="select a.* ,... ${tablename(&quot;zhtc_fxuser&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="81223:81320" placeholder="select sum(t... ${tablename(&quot;zhtc_commission_withdrawal&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="81403:81512" placeholder="select sum(t... ${tablename(&quot;zhtc_commission_withdrawal&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="81598:81680" placeholder="select sum(m... ${tablename(&quot;zhtc_earnings&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="85738:86015" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="87085:87345" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="87737:87985" placeholder="select a.* ,... ${tablename(&quot;zhtc_yellowstore&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="96112:96294" placeholder="select a.sto... ${tablename(&quot;zhtc_store&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="102704:103006" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="104939:105124" placeholder="select a.det... ${tablename(&quot;zhtc_comments&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="107057:107236" placeholder="select a.det... ${tablename(&quot;zhtc_comments&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="108490:108777" placeholder="select a.*,b... ${tablename(&quot;zhtc_information&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="111675:111880" placeholder="select a.*,b... ${tablename(&quot;zhtc_videodz&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="111962:112167" placeholder="select a.*,b... ${tablename(&quot;zhtc_videopl&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="124035:124165" placeholder="select * fro... ${tablename(&quot;zhtc_integral&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="125108:125302" placeholder="select a.*,b... ${tablename(&quot;zhtc_signlist&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="125591:125785" placeholder="select a.*,b... ${tablename(&quot;zhtc_signlist&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="126422:126611" placeholder="select sum(s... ${tablename(&quot;zhtc_integral&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="129339:129405" placeholder="select * fro... ${tablename('zhtc_ad')}" />
+            <marker date="1529203370896" expanded="true" signature="134327:134645" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="134410:134477" placeholder="select count... ims_clf_dongtai_dianzan" />
+            <marker date="1529203370896" expanded="true" signature="135214:135496" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="135214:135620" placeholder="select a.*,b... ${tablename(&quot;clf_dongtai_list&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="135297:135364" placeholder="select count... ims_clf_dongtai_dianzan" />
+            <marker date="1529203370896" expanded="true" signature="135508:135562" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="135508:135563" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="137073:137412" placeholder="select FROM_... ${tablename(&quot;clf_dongtai_list&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="137156:137223" placeholder="select count... ims_clf_dongtai_dianzan" />
+            <marker date="1529203370896" expanded="true" signature="138172:138477" placeholder="SELECT a.con... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="139825:140011" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="139825:140018" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141009" placeholder="select * fro... " />
+            <marker date="1529203370896" expanded="true" signature="140940:141057" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141058" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141059" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141061" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141063" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141065" placeholder="select * fro... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="140940:141066" placeholder="select * fro... " />
+            <marker date="1529203370896" expanded="true" signature="144795:144981" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="144795:144987" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="144795:144988" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="146085:146236" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="146692:146931" placeholder="SELECT a.con... ${tablename(&quot;clf_dongtai_pinglun&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="148833:148852" placeholder="select user_... " />
+            <marker date="1529203370896" expanded="true" signature="148833:148853" placeholder="select user_... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="148833:148877" placeholder="select user_... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="148833:148883" placeholder="select user_... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="148833:148892" placeholder="select user_... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="148833:148893" placeholder="select user_... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="150731:150778" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
+            <marker date="1529203370896" expanded="true" signature="150731:150787" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
+            <marker date="1529203370896" expanded="true" signature="150731:150793" placeholder="SELECT renwu... ${tablename('zhtc_system')}" />
+            <marker date="1529203370896" expanded="true" signature="150731:150794" placeholder="SELECT renwu... ${tablename('')}" />
+            <marker date="1529203370896" expanded="true" signature="152973:152992" placeholder="select useri... " />
+            <marker date="1529203370896" expanded="true" signature="152973:153031" placeholder="select useri... ${tablename('clf_renwu_order')}" />
+            <marker date="1529203370896" expanded="true" signature="152973:153043" placeholder="select useri... ${tablename('clf_renwu_order')}" />
+            <marker date="1529203370896" expanded="true" signature="152973:153050" placeholder="select useri... ${tablename('clf_renwu_order')}" />
+            <marker date="1529203370896" expanded="true" signature="152973:153051" placeholder="select useri... ${tablename('')}" />
+            <marker date="1529203370896" expanded="true" signature="153087:153162" placeholder="select useri... ${tablename('clf_renwu_order')}" />
+            <marker date="1529203370896" expanded="true" signature="153815:153835" placeholder="SELECT money... " />
+            <marker date="1529203370896" expanded="true" signature="153815:153836" placeholder="SELECT money... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="153815:153867" placeholder="SELECT money... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="153815:153876" placeholder="SELECT money... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="153815:153878" placeholder="SELECT money... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="154075:154140" placeholder="SELECT money... ${tablename($tablename)}" />
+            <marker date="1529203370896" expanded="true" signature="157621:157646" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="157621:157671" placeholder="SELECT b.nam... ${tablename(&quot;clf_dongtai_dashang&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="157621:157684" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="157621:157692" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="157974:158053" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="158534:158613" placeholder="SELECT ruyan... ${tablename(&quot;zhtc_user&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="162055:162153" placeholder="select * fro... ${tablename(&quot;clf_dongtai_list&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="162761:162781" placeholder="SELECT * FRO... " />
+            <marker date="1529203370896" expanded="true" signature="162761:162782" placeholder="SELECT * FRO... ${tablename('')}" />
+            <marker date="1529203370896" expanded="true" signature="162761:162924" placeholder="SELECT * FRO... select" />
+            <marker date="1529203370896" expanded="true" signature="162761:162925" placeholder="SELECT * FRO... ${tablename('zhtc_user')}" />
+            <marker date="1529203370896" expanded="true" signature="162824:162924" placeholder="select useri... ${tablename(&quot;clf_guanzhu&quot;)}" />
+            <marker date="1529203370896" expanded="true" signature="163605:163786" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
+            <marker date="1529203370896" expanded="true" signature="163841:163969" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
+            <marker date="1529203370896" expanded="true" signature="163841:164016" placeholder="SELECT a.rev... ${tablename('clf_renwu_order')}" />
+            <marker date="1529203370896" expanded="true" signature="163841:164130" placeholder="SELECT * FRO... ${tablename('zhtc_information')}" />
+            <marker date="1529203370896" expanded="true" signature="164467:164509" placeholder="select ruyan... " />
+            <marker date="1529203370896" expanded="true" signature="164467:164510" placeholder="select ruyan... ${tablename('')}" />
+            <marker date="1529203370896" expanded="true" signature="164467:164542" placeholder="select ruyan... ${tablename('zhtc_user')}" />
+            <marker date="1529203370896" expanded="true" signature="164467:164555" placeholder="select ruyan... ${tablename('zhtc_user')}" />
+            <marker date="1529203370896" expanded="true" signature="165905:165974" placeholder="SELECT * FRO... " />
+            <marker date="1529203370896" expanded="true" signature="165905:166002" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="165905:166007" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="165905:166008" placeholder="SELECT * FRO... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="165905:166015" placeholder="SELECT * FRO... ${tablename('')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166385" placeholder="SELECT * fro... " />
+            <marker date="1529203370896" expanded="true" signature="166296:166386" placeholder="SELECT * fro... ${tablename('')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166418" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166426" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166437" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166451" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166459" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="166296:166478" placeholder="SELECT * fro... ${tablename('clf_funds')}" />
+            <marker date="1529203370896" expanded="true" signature="166881:167000" placeholder="select *,FRO... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="166881:167009" placeholder="select *,FRO... ${tablename('clf_dongtai_pinglun')}" />
+            <marker date="1529203370896" expanded="true" signature="167917:168175" placeholder="SELECT b.id ${tablename('clf_renwu_order')}" />
+            <marker date="1529203370896" expanded="true" signature="167917:168320" placeholder="SELECT b.id a" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/source/system/systeminfo.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/settings.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/func/core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="233" column="31" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
+          <folding>
+            <marker date="1529219217638" expanded="true" signature="523:537" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="997:1011" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="2036:2050" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="2627:2641" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="3268:3282" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="4074:4088" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="5084:5098" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="5613:5627" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="6943:6957" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="8101:8115" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="9203:9217" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="10224:10238" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="11489:11503" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="11902:11916" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="12562:12576" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="13239:13253" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="14628:14642" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="15021:15035" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="15600:15614" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="16197:16211" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="16611:16625" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="17231:17245" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="17715:17729" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="18122:18136" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="18587:18601" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="19090:19104" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="19866:19880" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="20360:20374" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="21014:21039" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="21762:21787" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="22225:22250" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="22964:22989" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="23532:23557" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="23964:23989" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="24523:24548" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="24980:25005" placeholder="..." />
+            <marker date="1529219217638" expanded="true" signature="28404:28470" placeholder="SELECT * FRO... ${tablename('wpdc_store')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/global.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/help.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="45" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/copyright.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/inc/web/sign_grade.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/function/pdo.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/zh_tcwq/template/web/sign_grade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

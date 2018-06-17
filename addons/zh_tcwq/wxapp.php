@@ -73,12 +73,16 @@ public function doPageAd(){
 }
 public function doPageUrl(){
   global $_GPC, $_W;
-  echo $_W['attachurl'];
+  //echo $_W['attachurl'];
+
+    echo 'https://cweekend.cn/ruyang/attachment/';
 }
+
 //url
 public function doPageUrl2(){
   global $_W, $_GPC;
-  echo $_W['siteroot'];
+  //echo $_W['siteroot'];
+  echo 'https://cweekend.cn/ruyang/';
 }
     //主分类
 public function  doPageType(){
@@ -430,17 +434,23 @@ if($_GPC['type_id']){
 $where.=" and  a.type_id=:type_id ";  
  $data[':type_id']=$_GPC['type_id'];
 }
+
     //区分是任务  还是分类信息
     if($_GPC['mytype']){
-            $where .= "and a.mytype =:mytype";
+            $where .= " AND a.mytype =:mytype";
         $data[':mytype']=$_GPC['mytype'];
         if($_GPC['mytype'] == 1){
+
             $join = 'LEFT JOIN '.tablename("clf_renwu_order").' w ON w.renwuid = a.id ';
             $filed = ',w.status as order_status';
         }else{
             $join = '';
             $filed = '';
         }
+    }
+    if($_GPC['userid']){
+        $where .= ' AND a.user_id = :userid';
+        $data[':userid'] = $_GPC['userid'];
     }
 if($_GPC['cityname']){
 $where.=" and a.cityname LIKE  concat('%', :name,'%') ";  
@@ -449,8 +459,9 @@ $data[':name']=$_GPC['cityname'];
 
 $pageindex = max(1, intval($_GPC['page']));
 $pagesize=10;
-$sql="select a.*,b.img as user_img,c.type_name,d.name as type2_name {$filed}  from" . tablename("zhtc_information") . " a"  . " left join " . tablename("zhtc_user") . " b on b.id=a.user_id " . " left join " . tablename("zhtc_type") . " c on a.type_id=c.id " . " left join " . tablename("zhtc_type2") . " d on a.type2_id=d.id ".$join.$where." ORDER BY a.top asc,a.sh_time DESC";
+$sql="select a.*, FROM_UNIXTIME(a.time,'%Y-%m-%d %H:%i') as new_time,b.img as user_img,c.type_name,d.name as type2_name {$filed}  from" . tablename("zhtc_information") . " a"  . " left join " . tablename("zhtc_user") . " b on b.id=a.user_id " . " left join " . tablename("zhtc_type") . " c on a.type_id=c.id " . " left join " . tablename("zhtc_type2") . " d on a.type2_id=d.id ".$join.$where." ORDER BY a.top asc,a.sh_time DESC";
 $select_sql =$sql." LIMIT " .($pageindex - 1) * $pagesize.",".$pagesize;
+
 $res = pdo_fetchall($select_sql,$data);
 $sql2="select a.*,b.label_name from " . tablename("zhtc_mylabel") . " a"  . " left join " . tablename("zhtc_label") . " b on b.id=a.label_id";
 $res2=pdo_fetchall($sql2);
@@ -565,7 +576,7 @@ echo json_encode($data2);
       echo json_encode($res);
     }
 
-    //支付
+    //支付 (微信支付)
     public function doPagePay(){
       global $_W, $_GPC;
       include IA_ROOT.'/addons/zh_tcwq/wxpay2.php';
@@ -4522,6 +4533,8 @@ ORDER BY create_time desc";
         $data['money_clf']=$money;
         $data['time_end']=$_GPC['end_time'];
         $data['mytype']=1;  //发布赏金任务
+        $data['longitude'] = $_GPC['longitude'];
+        $data['latitude'] = $_GPC['latitude'];
 
         $res = pdo_insert('zhtc_information', $data);
         if($res){
@@ -4830,8 +4843,7 @@ ORDER BY
      * 上传视频
      */
     function doPageUploadVideo(){
-        //1.接收提交文件的用户
-        //$username=$_POST['username'];
+
         //我们这里需要使用到 $_FILES
         
         $obj = $_FILES['upfile'];
@@ -4852,20 +4864,23 @@ ORDER BY
             $uploaded_file=$obj['tmp_name'];
 
             //创建一个文件夹
-            $path = dirname(__DIR__).'/video/';
+            $path =  realpath('..').'/web/video/';
             //判断该用户文件夹是否已经有这个文件夹
-            if(!file_exists($path)) {
-                $this->createDir($path);
+            if(!is_dir($path)) {
+                //检查是否有该文件夹，如果没有就创建，并给予最高权限
+                mkdir($path, 0777);
             }
 
-            $time = time().mt_rand(100,999);
+            //$time = time().mt_rand(100,999);
             $filename = $obj['name'];
+            $type = trim(strrchr($filename, '.'),'.');
+            $new_filename = $this->video_b().'.'.$type;
 
-            $new_filename = $time.$filename;
             $move_to_file=$path.$new_filename;  //组成文件路径
                                                                     //一些配置  需要写在后台   比如文件大小 格式
             if(move_uploaded_file($uploaded_file,iconv("utf-8","gb2312",$move_to_file))) {
-                $this->ajaxSuccess($new_filename,'上传成功');
+                echo json_encode(array('path'=>$new_filename,'info'=>'上传成功'));
+
             } else {
                $this->ajaxError('上传失败，错误代码1001');
             }
@@ -4898,25 +4913,20 @@ ORDER BY
             }
         }
     }
-
-    /**
-     * 建立文件夹
-     *
-     * @param string $aimUrl
-     * @return viod
+    
+    /**生成视频唯一的标识符
+     * @return string
      */
-    function createDir($aimUrl) {
-        $aimUrl = str_replace('', '/', $aimUrl);
-        $aimDir = '';
-        $arr = explode('/', $aimUrl);
-        $result = true;
-        foreach ($arr as $str) {
-            $aimDir .= $str . '/';
-            if (!file_exists($aimDir)) {
-                $result = mkdir($aimDir);
-            }
-        }
-        return $result;
+    function video_b(){
+        $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
+        $orderSn = $yCode[intval(date('Y')) - 2011] . strtoupper(dechex(date('m'))) . date('d') . substr(time(), -5) . substr(microtime(), 2, 5) . sprintf('%02d', rand(0, 99));
+        return $orderSn.mt_rand(100,999).time().date('Ymd') . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
+    }
+    function doPagemp(){
+        $password = 123456;
+        $re = hash('sha256',$password,true);
+        $salt = bin2hex($re);
+        return crypt($password,$salt);
     }
 
 }/////////////////////////////////////////////

@@ -11,7 +11,7 @@ if($_GPC['keywords']){
 	$pageindex = max(1, intval($_GPC['page']));
 
 	$pagesize=10;
-	$sql="select *  from " . tablename("zhtc_user") .$where;
+	$sql="select *,ruyang_money+money_dj as zzmoney  from " . tablename("zhtc_user") .$where;
 	$select_sql =$sql." LIMIT " .($pageindex - 1) * $pagesize.",".$pagesize;
 	$list = pdo_fetchall($select_sql,$data);	
 

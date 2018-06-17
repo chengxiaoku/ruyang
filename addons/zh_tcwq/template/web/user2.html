@@ -70,6 +70,7 @@
 
                         <th class="col-md-2">注册时间</th>
                         <th class="col-md-1">余额</th>
+                        <th class="col-md-1">账户流水</th>
                         <th class="col-md-2">操作</th>
                         <th class="col-md-1">状态</th>
 
@@ -86,7 +87,6 @@
                         </td>
 
                         <td >{$row['id']}</td>
-
                         <td><img class="store_list_img" src="{$row['img']}"/></td>
 
                         <td>{$row['name']}</td>
@@ -94,8 +94,8 @@
                         <td>{$row['openid']}</td>
 
                         <td>{php echo date("Y-m-d H:i:s",$row['time']);}</td> 
-                        <td>{$row['ruyang_money']}</td>
-
+                        <td>{$row['zzmoney']}</td>
+                        <td><a href="{php echo $this->createWebUrl('user2_funds', array('op' => 'select_funds', 'id' => $row['id'],'name'=>$row['name']))}">查看</a></td>
                         <td>
                         <!--<a href="javascript:void(0);" data-toggle="modal" data-target="#myModalb{$row['id']}"><span class="btn btn-xs ygyouhui2">充值余额</span> </a>-->
                         {if $row['state']==1}

@@ -25,7 +25,7 @@ class Core extends WeModuleSite
                      // 1 => $this->createMainMenu('自定义数据 ', $do, 'numdata', ''),
                 )
             );              
-            
+            /*
              $navemenu[17] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=nav&m=zh_tcwq" class="panel-title wytitle" id="yframe-17"><icon style="color:#8d8d8d;" class="fa fa-compass"></icon>导航管理</a>',
                 'items' => array(
@@ -34,7 +34,7 @@ class Core extends WeModuleSite
                     
                    
                 )
-            );
+            );*/
             //这是我自己扩展的菜单  菜单ID 为21
               $navemenu[21] = array(
                   'title' => '<a href="index.php?c=site&a=entry&op=display&do=dongtai&m=zh_tcwq" class="panel-title wytitle" id="yframe-21"><icon style="color:#8d8d8d;" class="fa fa-compass"></icon>趣味圈</a>',
@@ -105,7 +105,7 @@ if($type['is_pcfw']==1){
                 )
             );
 
-             $navemenu[18] = array(
+             /*$navemenu[18] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=video&m=zh_tcwq" class="panel-title wytitle" id="yframe-18"><icon style="color:#8d8d8d;" class="fa fa-compass"></icon>视频管理</a>',
                 'items' => array(
                      0 => $this->createMainMenu('视频管理 ', $do, 'video', ''),
@@ -113,9 +113,10 @@ if($type['is_pcfw']==1){
                     
                    
                 )
-            );           
+            );          */
          if($type['is_pageopen']==1){
-            $navemenu[4] = array(
+             //黄页114
+            /*$navemenu[4] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=yellowstore&m=zh_tcwq" class="panel-title wytitle" id="yframe-4"><icon style="color:#8d8d8d;" class="fa fa-compass"></icon>黄页114</a>',
                 'items' => array(
                      0 => $this->createMainMenu('入驻列表 ', $do, 'yellowstore', ''),
@@ -125,7 +126,7 @@ if($type['is_pcfw']==1){
                      4=> $this->createMainMenu('审核设置', $do, 'yellowcheck', ''),
                    
                 )
-            );
+            );*/
         }
            // $navemenu[5] = array(
            //      'title' => '<a href="index.php?c=site&a=entry&op=display&do=news&m=zh_tcwq" class="panel-title wytitle" id="yframe-5"><icon style="color:#8d8d8d;" class="fa fa-bell"></icon>  公告管理</a>',
@@ -144,8 +145,8 @@ if($type['is_pcfw']==1){
             );
 
   
-         
-              $navemenu[7] = array(
+            //商品管理
+         /*     $navemenu[7] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=goods&m=zh_tcwq" class="panel-title wytitle" id="yframe-7"><icon style="color:#8d8d8d;" class="fa fa-cart-plus"></icon>  商品管理</a>',
                 'items' => array(
                      0 => $this->createMainMenu('商品列表 ', $do, 'goods', ''),
@@ -153,7 +154,7 @@ if($type['is_pcfw']==1){
                      4=> $this->createMainMenu('订单管理 ', $do, 'ddgl', ''),
                 )
             );
-      
+      */
           $navemenu[9] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=ygquan&m=zh_tcwq" class="panel-title wytitle" id="yframe-9"><icon style="color:#8d8d8d;" class="fa fa-gift"></icon>  营销设置</a>',
                 'items' => array(
@@ -179,7 +180,7 @@ if($type['is_pcfw']==1){
                 )
             );
          }
-           $navemenu[16] = array(
+         /*  $navemenu[16] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=txlist&m=zh_tcwq" class="panel-title wytitle" id="yframe-16"><icon style="color:#8d8d8d;" class="fa fa-key"></icon>  数据统计</a>',
                 'items' => array(
                      2 => $this->createMainMenu('提现列表 ', $do, 'txlist', ''),
@@ -188,7 +189,7 @@ if($type['is_pcfw']==1){
                     1 => $this->createMainMenu('销售额统计 ', $do, 'xsdata', ''),
                    
                 )
-            );  
+            );  */
             $navemenu[11] = array(
                 'title' => '<a href="index.php?c=site&a=entry&op=display&do=user2&m=zh_tcwq" class="panel-title wytitle" id="yframe-11"><icon style="color:#8d8d8d;" class="fa fa-user"></icon>  会员管理</a>',
                 'items' => array(
@@ -226,12 +227,12 @@ if($type['is_pcfw']==1){
                     0 => $this->createMainMenu('基本信息 ', $do, 'settings', ''),
                     1 => $this->createMainMenu('小程序配置', $do, 'peiz', ''),
                     2 => $this->createMainMenu('支付配置', $do, 'pay', ''), 
-                    // 3 => $this->createMainMenu('分享设置', $do, 'fenx', ''),
+                     //3 => $this->createMainMenu('分享设置', $do, 'fenx', ''),
                     4 => $this->createMainMenu('短信配置', $do, 'sms', ''),
                     5 => $this->createMainMenu('模板消息', $do, 'template', ''),                  
                     6 => $this->createMainMenu('帮助中心', $do, 'help', ''),
-                    7 => $this->createMainMenu('版权设置', $do, 'copyright', ''),                   
-                    
+                    7 => $this->createMainMenu('版权设置', $do, 'copyright', ''),
+                    8 => $this->createMainMenu('签到等级', $do, 'sign_grade', ''),
                 )
             );
         }

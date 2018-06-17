@@ -581,12 +581,12 @@ $we7_system_menu['site'] = array(
 					'icon' => 'wi wi-site-setting',
 					'permission_name' => 'system_setting_site',
 				),
-				'system_setting_menu' => array(
+				/*'system_setting_menu' => array(
 					'title' => '菜单设置',
 					'url' => url('system/menu'),
 					'icon' => 'wi wi-menu-setting',
 					'permission_name' => 'system_setting_menu',
-				),
+				),*/
 				'system_setting_attachment' => array(
 					'title' => '附件设置',
 					'url' => url('system/attachment'),
