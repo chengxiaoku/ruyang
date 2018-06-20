@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <button onclick="btn1()">发送邮件</button>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+    //监听用户发的弹幕事件
+    // 通过异步进行弹幕的提交数据
+    //send_id:发送者ID conten :内容  opening_time距离电影开始 多长时间  film_id:电影ID
+
+
+    function btn1(){
+        //告诉服务器开始帮我发邮件
+        websocket.send('开始发送邮件件吧');
+
+    }
+
+    /*进行srocket 的消息发送     每隔一段时间发送一个心跳消息   避免自动关闭连接*/
+    //每隔一定时间进行一次心跳传送
+    //123.207.218.195
+    //var wsServer = 'ws://123.207.218.195:8514';
+    var wsServer = 'wss://www.cweekend.cn/wss';
+    var websocket = new WebSocket(wsServer);
+    //连接上之后打开弹幕层
+    websocket.onopen = function (evt) {
+        //增加在线人数
+        console.log("Connected to WebSocket server.1");
+    };
+
+    websocket.onclose = function (evt) {
+        console.log("Disconnected");
+    };
+
+    websocket.onmessage = function (evt) {
+
+        console.log('Retrieved data from server: ' + evt.data);
+    };
+
+
+    websocket.onerror = function (evt, e) {
+        console.log('Error occured: ' + evt.data);
+    };
+
+
+</script>
+
+</html>

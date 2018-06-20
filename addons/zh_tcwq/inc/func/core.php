@@ -171,12 +171,13 @@ if($type['is_pcfw']==1){
             );
           if($type['is_jf']==1){
              $navemenu[8] = array(
-                'title' => '<a href="index.php?c=site&a=entry&op=display&do=integral&m=zh_tcwq" class="panel-title wytitle" id="yframe-8"><icon style="color:#8d8d8d;" class="fa fa-star-half-o"></icon>  积分商城</a>',
+                //'title' => '<a href="index.php?c=site&a=entry&op=display&do=integral&m=zh_tcwq" class="panel-title wytitle" id="yframe-8"><icon style="color:#8d8d8d;" class="fa fa-star-half-o"></icon>  积分商城</a>',
+                'title' => '<a href="index.php?c=site&a=entry&op=display&do=integral&m=zh_tcwq" class="panel-title wytitle" id="yframe-8"><icon style="color:#8d8d8d;" class="fa fa-star-half-o"></icon>  签到管理</a>',
                 'items' => array(
                      0 => $this->createMainMenu('签到管理', $do, 'integral', ''),
                     // 1 => $this->createMainMenu('积分设置', $do, 'jfsz', ''),
-                    2 => $this->createMainMenu('商品列表', $do, 'jfgoods', ''),
-                    3 => $this->createMainMenu('商品分类', $do, 'jftype', '')
+                   /* 2 => $this->createMainMenu('商品列表', $do, 'jfgoods', ''),
+                    3 => $this->createMainMenu('商品分类', $do, 'jftype', '')*/
                 )
             );
          }

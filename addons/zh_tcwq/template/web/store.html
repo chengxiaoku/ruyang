@@ -112,8 +112,9 @@
                         <td class="col-md-1">入住时间</td>
                         
                         <td class="col-md-1">到期时间</td>
-                        <td class="col-md-1">商品数量</td>
-                        <td class="col-md-1">余额</td>
+                        <!--<td class="col-md-1">商品数量</td>
+                        <td class="col-md-1">余额</td>-->
+                        <td class="col-md-1">热门排序</td>
                         <td class="col-md-1">状态</td>
                         <td class="col-md-1" >操作</td>
                     </tr>
@@ -144,8 +145,9 @@
                            {/if}
 
                            {php $goodnum=count(pdo_getall('zhtc_goods',array('store_id'=>$item['id'])));}
-                        <td>{$goodnum}</td>
-                           <td>{$item['wallet']}</td>
+                        <!--<td>{$goodnum}</td>-->
+                          <!-- <td>{$item['wallet']}</td>-->
+                        <td>{$item['num']}</td>
                         {if $item['state']==1}
                         <td>
                             <span class="label storered">待审核</span>

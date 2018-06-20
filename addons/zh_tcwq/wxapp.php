@@ -75,14 +75,19 @@ public function doPageUrl(){
   global $_GPC, $_W;
   //echo $_W['attachurl'];
 
-    echo 'https://cweekend.cn/ruyang/attachment/';
+    echo 'https://'.$this->get_fuwu().'/attachment/';
+}
+private function get_fuwu(){
+    global $_W;
+    $item=pdo_get('zhtc_system',array('uniacid'=>$_W['uniacid']),array('fuwuqi'));
+    return $item['fuwuqi'];
 }
 
 //url
 public function doPageUrl2(){
   global $_W, $_GPC;
   //echo $_W['siteroot'];
-  echo 'https://cweekend.cn/ruyang/';
+  echo 'https://'.$this->get_fuwu().'/';
 }
     //主分类
 public function  doPageType(){
@@ -4535,6 +4540,7 @@ ORDER BY create_time desc";
         $data['mytype']=1;  //发布赏金任务
         $data['longitude'] = $_GPC['longitude'];
         $data['latitude'] = $_GPC['latitude'];
+        $data['time_start'] = $_GPC['start_time'];
 
         $res = pdo_insert('zhtc_information', $data);
         if($res){
@@ -4604,7 +4610,7 @@ ORDER BY create_time desc";
         $revoke_text = $_GPC['revoke_text'];
         $tablename = 'zhtc_information';
         //是否判断超时，为true即 任务超时才可以撤销
-        $_is_revoke_time = false;
+        $_is_revoke_time = true;
         //判断该任务是否是该用户发布的
         $tr= pdo_exists($tablename,array('id'=>$renwuid,'user_id'=>$userid));
         if(!$tr){
@@ -4613,14 +4619,18 @@ ORDER BY create_time desc";
         //判断该任务当前过程是否在待付款之前
         if(
         pdo_exists('zhtc_information',array('id'=>$renwuid,'tatus' => 1)) ||  (pdo_exists('clf_renwu_order',array('renwuid'=>$renwuid,'status' => 1)) && pdo_exists('zhtc_information',array('id'=>$renwuid,'tatus' => 2)))){
-            //判断是否超时
-            if($_is_revoke_time){
-                //获取任务要结束的时间
-                $time_end = pdo_getcolumn($tablename, array('id'=>$renwuid), 'time_end');
-                if($time_end > time()){ //超时
-                    $this->ajaxError('该任务还未超时');
+            //判断是否被抢过单  如果被抢过 则不允许撤回，(除非任务超时)   如果未被抢单 随时可以被撤回
+            if(pdo_exists('clf_renwu_order',array('renwuid'=>$renwuid))){
+                //判断是否超时
+                if($_is_revoke_time){
+                    //获取任务要结束的时间
+                    $time_end = pdo_getcolumn($tablename, array('id'=>$renwuid), 'time_end');
+                    if($time_end > time()){ //超时
+                        $this->ajaxError('该任务还未超时');
+                    }
                 }
             }
+
             //获取该任务的赏金
             $money_clf = pdo_getcolumn($tablename, array('id'=>$renwuid), 'money_clf');
             //进行撤销任务(该账号冻结的金额 回到原账号)
@@ -4927,6 +4937,127 @@ ORDER BY
         $re = hash('sha256',$password,true);
         $salt = bin2hex($re);
         return crypt($password,$salt);
+    }
+
+    /**
+     * 获取热门商家
+     */
+    function doPagegetstore(){
+        global $_GPC , $_W;
+        $pageindex = max(1, intval($_GPC['page']));
+        if($_GPC['pagesize']){
+            $pagesize=$_GPC['pagesize'];
+        }else{
+            $pagesize=10;
+        }
+
+        pdo_update('zhtc_store',array('time_over'=>1),array('dq_time <='=>time(),'state'=>2));
+        $where=" where uniacid=:uniacid and time_over !=1 and state=2";
+        $data[':uniacid']=$_W['uniacid'];
+        $pageindex = max(1, intval($_GPC['page']));
+
+        $sql= "select * from".tablename('zhtc_store').$where." order by num ASC";
+        $select_sql =$sql." LIMIT " .($pageindex - 1) * $pagesize.",".$pagesize;
+
+        $res = pdo_fetchall($select_sql,$data);
+
+        // $res=pdo_getall('zhtc_store',array('uniacid'=>$_W['uniacid'],'time_over !='=>1),array(),'','num asc');
+        echo json_encode($res);
+    }
+
+    /**
+     * 修改任务信息
+     */
+    function doPageUpdaterenwu(){
+        global $_GPC , $_W;
+        $tr = false;
+        if($_GPC['userid']){
+            $userid = $_GPC['userid'];
+        }else{
+            $tr = true;
+        }
+
+        if($_GPC['renwuid']){
+            $renwuid = $_GPC['renwuid'];
+        }else{
+            $tr = true;
+        }
+        if($tr){
+            $this->ajaxError('请输入正确的参数');
+        }
+        $tablename = 'zhtc_information';
+        //判断该任务是否是该用户发布的
+        $tr= pdo_exists($tablename,array('id'=>$renwuid,'user_id'=>$userid));
+        if(!$tr){
+            $this->ajaxError('该用户没有发布此任务，请查明原因');
+        }
+        //判断是否被抢过单  如果被抢过 则不允许修改   如果未被抢单 可以被修改
+        if(!pdo_exists('clf_renwu_order',array('renwuid'=>$renwuid))){
+            //判断该任务是否被撤回
+            if(pdo_exists($tablename,array('id'=>$renwuid,'user_id'=>$userid,'tatus'=>5))){
+                $this->ajaxError('该任务已被撤回，不能修改');
+            }
+            $system=pdo_get('zhtc_system',array('uniacid'=>$_W['uniacid']));
+            $data['user_name']=$_GPC['user_name'];
+            $data['views']=1; //浏览量  默认为1
+            $data['user_tel']=$_GPC['user_tel'];
+            $data['details']=$_GPC['details'];  //内容
+            $data['type_id']=$_GPC['type_id'];  //类型ID
+            $data['type2_id']=$_GPC['type2_id'];    //子类类型ID
+            $data['user_img2']=$_GPC['user_img2'];
+            //$data['hot']=$_GPC['hot'];
+            $data['top']=2;  //2不置顶
+            $data['address']=$_GPC['address'];
+            $data['uniacid']=$_W['uniacid'];
+            $data['state']=2;   //通过
+            $data['cityname']=$system['cityname'];
+            $data['dq_time']=-28800;   //过期时间
+            $data['time']=time();
+            $data['sh_time']=time();
+            $data['money_clf']= $_GPC['money'];
+            $data['time_end']=$_GPC['end_time'];
+            $data['mytype']=1;  //发布赏金任务
+            $data['longitude'] = $_GPC['longitude'];
+            $data['latitude'] = $_GPC['latitude'];
+            $data['time_start'] = $_GPC['start_time'];
+            //执行修改操作
+            if(pdo_update($tablename,$data,array('id'=>$renwuid,'user_id'=>$userid))){
+                $this->ajaxSuccess(array(),'修改成功');
+            }else{
+                $this->ajaxError('修改失败');
+            };
+
+        }else{
+            $this->ajaxError('该任务已被执行，不能修改');
+        }
+    }
+
+    /**
+     * 趣味圈获取打赏的个数
+     * type
+     * 1: 打赏的人数
+     * 2：打赏的个数   根据打赏的总数（默认）
+     */
+    function doPagegetdashangnum(){
+        global $_GPC , $_W;
+        if($_GPC['type']){
+            $type = $_GPC['type'];
+        }else{
+            $type = 2;
+        }
+        $dongtaiid = $_GPC['dongtaiid'];
+        $tablename = 'clf_dongtai_dashang';
+        if($type == 2){
+            $this->ajaxSuccess(pdo_count($tablename,array('dongtaiid'=>$dongtaiid)));
+        }else if($type == 1){
+            $sql = 'Select count(*) num From ims_clf_dongtai_dashang Where id In (Select Max(id) From ims_clf_dongtai_dashang where dongtaiid = :dongtaiid Group By userid)';
+            $data = pdo_fetch($sql,array(':dongtaiid' => $dongtaiid));
+            $this->ajaxSuccess($data['num']);
+        }else{
+            $this->ajaxError('请输入正确的参数');
+        }
+
+
     }
 
 }/////////////////////////////////////////////

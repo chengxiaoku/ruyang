@@ -26,7 +26,7 @@ $pageindex = max(1, intval($_GPC['page']));
 $pagesize=10;
 
 
-$sql="SELECT a.*,b.type as typename FROM ".tablename('zhtc_store'). " a"  . " left join " . tablename("zhtc_in") . " b on b.id=a.type".$where." ORDER BY a.id DESC";
+$sql="SELECT a.*,b.type as typename FROM ".tablename('zhtc_store'). " a"  . " left join " . tablename("zhtc_in") . " b on b.id=a.type".$where." ORDER BY a.num ASC";
 $total=pdo_fetchcolumn("select count(*) from " .tablename('zhtc_store'). " a"  . " left join " . tablename("zhtc_in") . " b on b.id=a.type".$where,$data);
 //echo $sql;die;
 $select_sql =$sql." LIMIT " .($pageindex - 1) * $pagesize.",".$pagesize;

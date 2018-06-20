@@ -16,7 +16,8 @@ $GLOBALS['frames'] = $this->getMainMenu();
             $data['video_type']=$_GPC['video_type'];
             $data['zfwl_open']=$_GPC['zfwl_open'];
             $data['tc_img']=$_GPC['tc_img'];
-            $data['tc_gg']=$_GPC['tc_gg'];     
+            $data['tc_gg']=$_GPC['tc_gg'];
+        $data['fuwuqi'] = $_GPC['fuwuqi'];
             if($_GPC['color']){
                 $data['color']=$_GPC['color'];
             }else{
@@ -38,4 +39,5 @@ $GLOBALS['frames'] = $this->getMainMenu();
                 }
             }
         }
+
 include $this->template('web/settings');
